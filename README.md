@@ -8,7 +8,7 @@ Executes zem with arguments listed in the Action's `args`.
 ```
 action "Publish" {
   needs = "Master"
-  uses = "artemnovichkov/stylin/action-zem@master"
+  uses = "artemnovichkov/action-zem@master"
   args = "publish"
   secrets = ["ZEM_TOKEN"]
 }
