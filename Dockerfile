@@ -1,8 +1,8 @@
 FROM node:10
 
-LABEL version="1.0.0"
-LABEL repository="https://github.com/artemnovichkov/stylin/action-zem"
-LABEL homepage="https://github.com/artemnovichkov/stylin/action-zem"
+LABEL version="0.1.1"
+LABEL repository="https://github.com/artemnovichkov/action-zem"
+LABEL homepage="https://github.com/artemnovichkov/action-zem"
 LABEL maintainer="Artem Novichkov <novichkoff93@gmail.com>"
 
 LABEL com.github.actions.name="GitHub Action for zem"
