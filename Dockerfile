@@ -1,6 +1,6 @@
 FROM node:10
 
-LABEL version="0.1.1"
+LABEL version="0.1.2"
 LABEL repository="https://github.com/artemnovichkov/action-zem"
 LABEL homepage="https://github.com/artemnovichkov/action-zem"
 LABEL maintainer="Artem Novichkov <novichkoff93@gmail.com>"
