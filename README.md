@@ -6,12 +6,28 @@ This Action for [zem](https://github.com/zeplin/zem) enables arbitrary actions w
 Executes zem with arguments listed in the Action's `args`.
 
 ```
-action "Publish" {
-  needs = "Master"
-  uses = "artemnovichkov/action-zem@master"
-  args = "publish"
-  secrets = ["ZEM_TOKEN"]
-}
+name: Build, Test, and Publish
+
+on: 
+  release:
+    types: [published]
+
+jobs:
+  build:
+    name: Build
+    runs-on: macOS-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Test
+      run: |
+        npm i
+        npm test
+    - name: Publish
+      uses: artemnovichkov/action-zem@master
+      env:
+        ZEM_TOKEN: ${{ secrets.ZEM_TOKEN }}
+      with:
+        args: publish
 ```
 
 ### Secrets
