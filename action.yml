@@ -1,0 +1,9 @@
+name: 'action-zem'
+description: 'GitHub Action for Zeplin Extension Manager'
+author: 'Artem Novichkov'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'package'
+  color: 'blue'
