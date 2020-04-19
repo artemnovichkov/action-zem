@@ -25,14 +25,14 @@ jobs:
     - name: Publish
       uses: artemnovichkov/action-zem@master
       env:
-        ZEM_TOKEN: ${{ secrets.ZEM_TOKEN }}
+        ZEM_ACCESS_TOKEN: ${{ secrets.ZEM_ACCESS_TOKEN }}
       with:
         args: publish
 ```
 
 ### Secrets
 
-* `ZEM_TOKEN` - **Optional**. The token to use for authentication with zem. Required for `zem publish`. Create a new token in [here](https://app.zeplin.io/profile/developer).
+* `ZEM_ACCESS_TOKEN` - **Optional**. The token to use for authentication with zem. Required for `zem publish`. Create a new token in [here](https://app.zeplin.io/profile/developer).
 
 ## License
 
