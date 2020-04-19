@@ -32,7 +32,7 @@ jobs:
 
 ### Secrets
 
-* `ZEM_ACCESS_TOKEN` - **Optional**. The token to use for authentication with zem. Required for `zem publish`. Create a new token in [here](https://app.zeplin.io/profile/developer).
+* `ZEM_ACCESS_TOKEN` - **Optional**. The token to use for authentication with zem. Required for `zem publish`. Create a new token [here](https://app.zeplin.io/profile/developer).
 
 ## License
 
