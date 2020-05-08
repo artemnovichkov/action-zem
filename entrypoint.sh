@@ -2,4 +2,4 @@
 
 set -e
 
-sh -c "npm install -g zem && zem $*"
+sh -c "npm install -g zem && npm install && zem $*"
